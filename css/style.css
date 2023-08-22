@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-div {
+  background-color: aqua;
+}
+
+#main {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  aspect-ratio: 1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.easy {
+  width: calc(100% / 7);
+}
+
+.medium {
+  width: calc(100% / 9);
+}
+
+.hard {
+  width: calc(100% / 10);
+}
+
+.color {
+  background-color: blue;
+}
