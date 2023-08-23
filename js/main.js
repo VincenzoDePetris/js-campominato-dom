@@ -71,10 +71,14 @@ function generaGriglia() {
       const cellNumber = i;
       if (bombe.includes(cellNumber)) {
         cell.classList.add("lose");
-        alert("fine partita");
+        alert("fine partita, hai totalizzato " + score + " punti");
       } else {
         cell.classList.add("color");
         score++;
+      }
+
+      if (score >= cellsFreeTotal) {
+        alert("Vittoria, hai totalizzato " + score + " punti");
       }
     });
 
